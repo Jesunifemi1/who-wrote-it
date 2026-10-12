@@ -1,6 +1,6 @@
 {
- "leader": "[Team leader name]",
- "members": "[Member names, or 'individual project']",
+ "leader": "Jesunifemi Ijaware",
+ "members": "Jesunifemi Ijaware (individual project)",
  "repo": "https://github.com/Jesunifemi1/who-wrote-it",
  "ai_statement": "This project was developed with the assistance of an LLM (Claude, by Anthropic), which the project guidelines allow for understanding concepts, debugging code, brainstorming experiments and interpreting results. Every number in this report is produced by the code in the repository (results/summary.json), so it can be re-checked by re-running the pipeline."
 }
