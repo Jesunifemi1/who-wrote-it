@@ -1,0 +1,26 @@
+tfidf output 0.62 0.617
+tfidf input 0.167 0.048
+tfidf both 0.608 0.606
+conf topic_biased input 0.303
+conf topic_biased output 0.5
+conf topic_biased both 0.525
+conf random input 0.148
+conf random output 0.484
+conf random both 0.475
+task write ood [0.503 0.507]
+task write id [0.54 0.52]
+task tech ood [0.582 0.493]
+task tech id [0.595 0.527]
+loso {'helpful_base': 0.7135416666666666, 'koala': 0.6324786324786325, 'oasst': 0.6187943262411347, 'selfinstruct': 0.4722222222222222, 'vicuna': 0.69375}
+feat all 0.59
+feat discourse 0.306
+feat formatting 0.43
+feat length 0.358
+feat lexical 0.276
+feat punctuation 0.321
+feat all_but_discourse 0.557
+feat all_but_formatting 0.518
+feat all_but_length 0.544
+feat all_but_lexical 0.6
+feat all_but_punctuation 0.557
+done

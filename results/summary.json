@@ -1,0 +1,3170 @@
+{
+ "dataset": {
+  "rows": 4824,
+  "prompts": 804,
+  "per_family": {
+   "GPT": 804,
+   "Claude": 804,
+   "Gemini": 804,
+   "Llama": 804,
+   "Qwen": 804,
+   "DeepSeek": 804
+  },
+  "split_prompts": {
+   "train": 562,
+   "val": 120,
+   "test": 122
+  },
+  "split_rows": {
+   "train": 3372,
+   "val": 720,
+   "test": 732
+  },
+  "source_prompts": {
+   "selfinstruct": 252,
+   "oasst": 188,
+   "koala": 156,
+   "helpful_base": 128,
+   "vicuna": 80
+  },
+  "task_prompts": {
+   "qa": 606,
+   "writing": 100,
+   "coding": 74,
+   "math": 24
+  },
+  "median_words": {
+   "Claude": 204.0,
+   "DeepSeek": 174.0,
+   "GPT": 273.0,
+   "Gemini": 223.0,
+   "Llama": 298.0,
+   "Qwen": 244.0
+  },
+  "median_chars": {
+   "Claude": 1310.0,
+   "DeepSeek": 1065.0,
+   "GPT": 1858.0,
+   "Gemini": 1410.0,
+   "Llama": 1940.0,
+   "Qwen": 1534.0
+  },
+  "input_median_words": 18,
+  "median_tokens": {
+   "Claude": 280.0,
+   "DeepSeek": 231.5,
+   "GPT": 416.5,
+   "Gemini": 326.0,
+   "Llama": 440.5,
+   "Qwen": 339.5
+  },
+  "share_truncated": {
+   "Claude": 0.602,
+   "DeepSeek": 0.425,
+   "GPT": 0.675,
+   "Gemini": 0.621,
+   "Llama": 0.729,
+   "Qwen": 0.65
+  }
+ },
+ "main": {
+  "cnn_output": {
+   "acc": [
+    0.5774134790528233,
+    0.012437614101773867,
+    3
+   ],
+   "f1": [
+    0.5855063940574676,
+    0.011212249044383473,
+    3
+   ],
+   "per_class_f1": [
+    0.654,
+    0.602,
+    0.658,
+    0.697,
+    0.386,
+    0.516
+   ],
+   "confusion_sum": [
+    [
+     206,
+     20,
+     24,
+     18,
+     77,
+     21
+    ],
+    [
+     3,
+     240,
+     4,
+     17,
+     72,
+     30
+    ],
+    [
+     7,
+     28,
+     218,
+     24,
+     51,
+     38
+    ],
+    [
+     12,
+     30,
+     10,
+     249,
+     46,
+     19
+    ],
+    [
+     22,
+     86,
+     17,
+     20,
+     170,
+     51
+    ],
+    [
+     14,
+     28,
+     23,
+     20,
+     96,
+     185
+    ]
+   ],
+   "epochs": [
+    8,
+    15,
+    12
+   ],
+   "best_epoch": [
+    5,
+    13,
+    9
+   ],
+   "params": 2541046,
+   "vocab": 18430,
+   "train_sec": [
+    254.5115807056427,
+    114.08714078163818,
+    3
+   ],
+   "n_train": 3372,
+   "n_test": 732,
+   "sec_per_epoch": 17.344892024993896,
+   "recall": [
+    0.563,
+    0.656,
+    0.596,
+    0.68,
+    0.464,
+    0.505
+   ]
+  },
+  "cnn_input": {
+   "acc": [
+    0.16712204007285972,
+    0.0012879904939645688,
+    3
+   ],
+   "f1": [
+    0.11970027961850489,
+    0.021865162282642993,
+    3
+   ],
+   "per_class_f1": [
+    0.124,
+    0.203,
+    0.15,
+    0.106,
+    0.096,
+    0.039
+   ],
+   "confusion_sum": [
+    [
+     75,
+     146,
+     67,
+     37,
+     33,
+     8
+    ],
+    [
+     75,
+     146,
+     67,
+     38,
+     32,
+     8
+    ],
+    [
+     74,
+     144,
+     66,
+     38,
+     36,
+     8
+    ],
+    [
+     74,
+     144,
+     66,
+     39,
+     35,
+     8
+    ],
+    [
+     77,
+     147,
+     67,
+     36,
+     31,
+     8
+    ],
+    [
+     75,
+     144,
+     67,
+     39,
+     31,
+     10
+    ]
+   ],
+   "epochs": [
+    4,
+    5,
+    4
+   ],
+   "best_epoch": [
+    1,
+    2,
+    1
+   ],
+   "params": 733814,
+   "vocab": 4311,
+   "train_sec": [
+    15.332542022069296,
+    1.8438758708854894,
+    3
+   ],
+   "n_train": 3372,
+   "n_test": 732,
+   "sec_per_epoch": 3.471745729446411
+  },
+  "cnn_both": {
+   "acc": [
+    0.5997267759562842,
+    0.010640547764615583,
+    3
+   ],
+   "f1": [
+    0.6131315251836406,
+    0.00643466924033511,
+    3
+   ],
+   "per_class_f1": [
+    0.681,
+    0.606,
+    0.675,
+    0.755,
+    0.404,
+    0.558
+   ],
+   "confusion_sum": [
+    [
+     220,
+     3,
+     28,
+     3,
+     83,
+     29
+    ],
+    [
+     2,
+     196,
+     22,
+     23,
+     92,
+     31
+    ],
+    [
+     5,
+     9,
+     245,
+     1,
+     66,
+     40
+    ],
+    [
+     9,
+     16,
+     16,
+     251,
+     50,
+     24
+    ],
+    [
+     33,
+     47,
+     26,
+     10,
+     193,
+     57
+    ],
+    [
+     11,
+     9,
+     25,
+     9,
+     100,
+     212
+    ]
+   ],
+   "epochs": [
+    9,
+    13,
+    9
+   ],
+   "best_epoch": [
+    6,
+    10,
+    6
+   ],
+   "params": 2583670,
+   "vocab": 18763,
+   "train_sec": [
+    187.43301439285278,
+    33.91559084110264,
+    3
+   ],
+   "n_train": 3372,
+   "n_test": 732,
+   "sec_per_epoch": 17.700974225997925
+  },
+  "lstm_output": {
+   "acc": [
+    0.5760473588342442,
+    0.01054265655991825,
+    3
+   ],
+   "f1": [
+    0.5751864385202189,
+    0.012003258342434677,
+    3
+   ],
+   "per_class_f1": [
+    0.673,
+    0.59,
+    0.655,
+    0.685,
+    0.389,
+    0.458
+   ],
+   "confusion_sum": [
+    [
+     228,
+     11,
+     35,
+     25,
+     55,
+     12
+    ],
+    [
+     6,
+     224,
+     28,
+     32,
+     47,
+     29
+    ],
+    [
+     7,
+     15,
+     258,
+     15,
+     39,
+     32
+    ],
+    [
+     15,
+     23,
+     17,
+     258,
+     33,
+     20
+    ],
+    [
+     31,
+     75,
+     37,
+     38,
+     150,
+     35
+    ],
+    [
+     24,
+     45,
+     51,
+     19,
+     80,
+     147
+    ]
+   ],
+   "epochs": [
+    9,
+    12,
+    10
+   ],
+   "best_epoch": [
+    6,
+    9,
+    7
+   ],
+   "params": 2534918,
+   "vocab": 18430,
+   "train_sec": [
+    421.2469352086385,
+    54.92175700195078,
+    3
+   ],
+   "n_train": 3372,
+   "n_test": 732,
+   "sec_per_epoch": 34.952242612838745,
+   "recall": [
+    0.623,
+    0.612,
+    0.705,
+    0.705,
+    0.41,
+    0.402
+   ]
+  },
+  "lstm_input": {
+   "acc": [
+    0.16666666666666666,
+    0.0,
+    3
+   ],
+   "f1": [
+    0.09439242722450945,
+    0.010080839050014,
+    3
+   ],
+   "per_class_f1": [
+    0.146,
+    0.031,
+    0.199,
+    0.089,
+    0.072,
+    0.031
+   ],
+   "confusion_sum": [
+    [
+     94,
+     7,
+     141,
+     80,
+     37,
+     7
+    ],
+    [
+     94,
+     7,
+     141,
+     80,
+     37,
+     7
+    ],
+    [
+     94,
+     7,
+     141,
+     80,
+     37,
+     7
+    ],
+    [
+     94,
+     7,
+     141,
+     80,
+     37,
+     7
+    ],
+    [
+     94,
+     7,
+     141,
+     80,
+     37,
+     7
+    ],
+    [
+     94,
+     7,
+     141,
+     80,
+     37,
+     7
+    ]
+   ],
+   "epochs": [
+    11,
+    4,
+    6
+   ],
+   "best_epoch": [
+    8,
+    1,
+    3
+   ],
+   "params": 727686,
+   "vocab": 4311,
+   "train_sec": [
+    71.95136260986328,
+    33.058102105098754,
+    3
+   ],
+   "n_train": 3372,
+   "n_test": 732,
+   "sec_per_epoch": 9.966440439224243
+  },
+  "lstm_both": {
+   "acc": [
+    0.5765027322404371,
+    0.012420930507273106,
+    3
+   ],
+   "f1": [
+    0.5802146923005976,
+    0.008768742112183576,
+    3
+   ],
+   "per_class_f1": [
+    0.66,
+    0.587,
+    0.686,
+    0.702,
+    0.34,
+    0.505
+   ],
+   "confusion_sum": [
+    [
+     219,
+     12,
+     33,
+     17,
+     61,
+     24
+    ],
+    [
+     4,
+     207,
+     14,
+     22,
+     58,
+     61
+    ],
+    [
+     6,
+     17,
+     246,
+     8,
+     44,
+     45
+    ],
+    [
+     17,
+     15,
+     11,
+     245,
+     34,
+     44
+    ],
+    [
+     35,
+     66,
+     28,
+     26,
+     135,
+     76
+    ],
+    [
+     16,
+     20,
+     18,
+     13,
+     85,
+     214
+    ]
+   ],
+   "epochs": [
+    12,
+    11,
+    10
+   ],
+   "best_epoch": [
+    9,
+    9,
+    7
+   ],
+   "params": 2577542,
+   "vocab": 18763,
+   "train_sec": [
+    1441.8038024902344,
+    98.36944753997176,
+    3
+   ],
+   "n_train": 3372,
+   "n_test": 732,
+   "sec_per_epoch": 119.58075475692749
+  },
+  "tfidf_output": {
+   "acc": [
+    0.6202185792349727,
+    0,
+    1
+   ],
+   "f1": [
+    0.6171771887487588,
+    0,
+    1
+   ],
+   "per_class_f1": [
+    0.7247706422018348,
+    0.6551724137931034,
+    0.6666666666666666,
+    0.7165354330708661,
+    0.3827751196172249,
+    0.5571428571428572
+   ]
+  },
+  "tfidf_input": {
+   "acc": [
+    0.16666666666666666,
+    0,
+    1
+   ],
+   "f1": [
+    0.047619047619047616,
+    0,
+    1
+   ],
+   "per_class_f1": [
+    0.2857142857142857,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "tfidf_both": {
+   "acc": [
+    0.6079234972677595,
+    0,
+    1
+   ],
+   "f1": [
+    0.6064397808350601,
+    0,
+    1
+   ],
+   "per_class_f1": [
+    0.7188940092165899,
+    0.6363636363636364,
+    0.6509433962264151,
+    0.6953125,
+    0.4019138755980861,
+    0.5352112676056338
+   ]
+  }
+ },
+ "cnn512": {
+  "acc": 0.5737704918032787,
+  "f1": 0.5854954210630134,
+  "acc_256_s0": 0.5833333333333334
+ },
+ "confound": {
+  "cnn_topic_biased_input": 0.23770491803278687,
+  "tfidf_topic_biased_input": 0.30327868852459017,
+  "cnn_topic_biased_output": 0.4672131147540984,
+  "tfidf_topic_biased_output": 0.5,
+  "cnn_topic_biased_both": 0.4672131147540984,
+  "tfidf_topic_biased_both": 0.5245901639344263,
+  "majority_topic_biased": 0.22950819672131148,
+  "cnn_random_input": 0.1885245901639344,
+  "tfidf_random_input": 0.14754098360655737,
+  "cnn_random_output": 0.5081967213114754,
+  "tfidf_random_output": 0.48360655737704916,
+  "cnn_random_both": 0.3770491803278688,
+  "tfidf_random_both": 0.47540983606557374,
+  "majority_random": 0.22131147540983606
+ },
+ "taskshift": {
+  "cnn_write_ood": [
+   0.42500000000000004,
+   0.0016666666666666774,
+   2
+  ],
+  "cnn_write_id": [
+   0.49666666666666665,
+   0.006666666666666654,
+   2
+  ],
+  "cnn_tech_ood": [
+   0.47959183673469385,
+   0.020408163265306117,
+   2
+  ],
+  "cnn_tech_id": [
+   0.48469387755102045,
+   0.035714285714285726,
+   2
+  ],
+  "lstm_write_ood": [
+   0.4766666666666667,
+   0.01999999999999999,
+   2
+  ],
+  "lstm_write_id": [
+   0.45999999999999996,
+   0.006666666666666682,
+   2
+  ],
+  "lstm_tech_ood": [
+   0.467687074829932,
+   0.028911564625850344,
+   2
+  ],
+  "lstm_tech_id": [
+   0.5340136054421769,
+   0.06122448979591835,
+   2
+  ],
+  "tfidf_write_ood": [
+   0.505,
+   0.0016666666666667052,
+   2
+  ],
+  "tfidf_write_id": [
+   0.53,
+   0.010000000000000009,
+   2
+  ],
+  "tfidf_tech_ood": [
+   0.5374149659863945,
+   0.044217687074829926,
+   2
+  ],
+  "tfidf_tech_id": [
+   0.5612244897959184,
+   0.03401360544217685,
+   2
+  ]
+ },
+ "loso": {
+  "tfidf": {
+   "helpful_base": 0.7135416666666666,
+   "koala": 0.6324786324786325,
+   "oasst": 0.6187943262411347,
+   "selfinstruct": 0.4722222222222222,
+   "vicuna": 0.69375
+  },
+  "cnn": {
+   "helpful_base": 0.7044270833333334,
+   "koala": 0.6057692307692307,
+   "oasst": 0.5815602836879432,
+   "selfinstruct": 0.4623015873015873,
+   "vicuna": 0.6
+  },
+  "cnn_in_dist": {
+   "helpful_base": 0.6493055555555555,
+   "koala": 0.6324786324786325,
+   "oasst": 0.5172413793103449,
+   "selfinstruct": 0.5335917312661499,
+   "vicuna": 0.7083333333333334
+  }
+ },
+ "siblings": {
+  "cnn": {
+   "models": {
+    "GPT": "gpt-4-turbo-2024-04-09",
+    "Claude": "claude-3-5-sonnet-20240620",
+    "Llama": "Meta-Llama-3.1-70B-Instruct-Turbo",
+    "Qwen": "Qwen2-72B-Instruct"
+   },
+   "sib_recall": {
+    "GPT": 0.5218579234972678,
+    "Claude": 0.7513661202185792,
+    "Llama": 0.6584699453551912,
+    "Qwen": 0.36065573770491804
+   },
+   "prim_recall": {
+    "GPT": 0.5628415300546449,
+    "Claude": 0.6557377049180327,
+    "Llama": 0.680327868852459,
+    "Qwen": 0.4644808743169399
+   },
+   "sib_acc": [
+    0.5730874316939891,
+    0.0175746999047385,
+    3
+   ],
+   "prim_acc_4fam": [
+    0.5908469945355191,
+    0.008421330605148903,
+    3
+   ],
+   "pred_counts": [
+    [
+     191,
+     15,
+     18,
+     14,
+     87,
+     41
+    ],
+    [
+     7,
+     275,
+     0,
+     12,
+     47,
+     25
+    ],
+    [
+     23,
+     23,
+     17,
+     241,
+     39,
+     23
+    ],
+    [
+     79,
+     61,
+     17,
+     14,
+     132,
+     63
+    ]
+   ]
+  },
+  "lstm": {
+   "models": {
+    "GPT": "gpt-4-turbo-2024-04-09",
+    "Claude": "claude-3-5-sonnet-20240620",
+    "Llama": "Meta-Llama-3.1-70B-Instruct-Turbo",
+    "Qwen": "Qwen2-72B-Instruct"
+   },
+   "sib_recall": {
+    "GPT": 0.5491803278688524,
+    "Claude": 0.7158469945355191,
+    "Llama": 0.6912568306010929,
+    "Qwen": 0.31420765027322406
+   },
+   "prim_recall": {
+    "GPT": 0.6229508196721312,
+    "Claude": 0.6120218579234973,
+    "Llama": 0.7049180327868853,
+    "Qwen": 0.4098360655737705
+   },
+   "sib_acc": [
+    0.5676229508196721,
+    0.017627715711152934,
+    3
+   ],
+   "prim_acc_4fam": [
+    0.587431693989071,
+    0.023203945015659862,
+    3
+   ],
+   "pred_counts": [
+    [
+     201,
+     13,
+     29,
+     20,
+     73,
+     30
+    ],
+    [
+     6,
+     262,
+     9,
+     38,
+     40,
+     11
+    ],
+    [
+     22,
+     18,
+     33,
+     253,
+     28,
+     12
+    ],
+    [
+     87,
+     42,
+     40,
+     27,
+     115,
+     55
+    ]
+   ]
+  }
+ },
+ "ablation": {
+  "cnn_no_format": [
+   0.42827868852459017,
+   0.0061475409836065364,
+   2
+  ],
+  "cnn_skeleton": [
+   0.5887978142076502,
+   0.012295081967213128,
+   2
+  ],
+  "cnn_content_only": [
+   0.23975409836065575,
+   0.017076502732240442,
+   2
+  ],
+  "cnn_words_only": [
+   0.39617486338797814,
+   0.0,
+   1
+  ],
+  "cnn_no_open_close": [
+   0.5109289617486339,
+   0.0,
+   1
+  ],
+  "cnn_first64": [
+   0.5368852459016393,
+   0.012295081967213128,
+   2
+  ],
+  "lstm_no_format": [
+   0.4426229508196721,
+   0.0,
+   1
+  ],
+  "lstm_skeleton": [
+   0.6010928961748634,
+   0.0,
+   1
+  ],
+  "lstm_content_only": [
+   0.3087431693989071,
+   0.0,
+   1
+  ],
+  "lstm_words_only": [
+   null,
+   null,
+   0
+  ],
+  "lstm_no_open_close": [
+   null,
+   null,
+   0
+  ],
+  "lstm_first64": [
+   0.5163934426229508,
+   0.0,
+   1
+  ]
+ },
+ "features": {
+  "clf": {
+   "all": 0.5901639344262295,
+   "discourse": 0.30601092896174864,
+   "formatting": 0.430327868852459,
+   "length": 0.35792349726775957,
+   "lexical": 0.27595628415300544,
+   "punctuation": 0.32103825136612024,
+   "all_but_discourse": 0.5573770491803278,
+   "all_but_formatting": 0.51775956284153,
+   "all_but_length": 0.5437158469945356,
+   "all_but_lexical": 0.5997267759562842,
+   "all_but_punctuation": 0.5573770491803278,
+   "all_logreg": 0.4822404371584699
+  },
+  "perm": {
+   "n_bold": 0.1295,
+   "n_colon_lines": 0.048,
+   "n_paragraphs": 0.0474,
+   "ttr_first200": 0.0423,
+   "opens_affirmation": 0.0414,
+   "n_headers": 0.0309,
+   "rate_exclaim": 0.0261,
+   "n_chars": 0.0245,
+   "frac_list_lines": 0.0242,
+   "n_words": 0.0217,
+   "opens_restating": 0.0205,
+   "rate_paren": 0.0131,
+   "rate_dash": 0.0116,
+   "n_numbered": 0.0112,
+   "avg_sent_len": 0.0085,
+   "avg_word_len": 0.0074,
+   "n_code_blocks": 0.006,
+   "n_bullets": 0.0053,
+   "has_conclusion": 0.0046,
+   "rate_I": 0.0041,
+   "rate_semicolon": 0.0037,
+   "rate_colon": 0.0036,
+   "n_emoji": -0.0003,
+   "n_lines": -0.0004,
+   "rate_question": -0.0018,
+   "offers_more_help": -0.0018,
+   "ends_with_question": -0.0018,
+   "rate_hedge": -0.0031,
+   "rate_you": -0.0111
+  },
+  "medians": {
+   "GPT": {
+    "n_chars": 1858.0,
+    "n_words": 273.0,
+    "n_lines": 23.0,
+    "n_paragraphs": 8.0,
+    "n_headers": 0.0,
+    "n_bullets": 0.0,
+    "n_numbered": 4.0,
+    "n_bold": 5.0,
+    "n_code_blocks": 0.0,
+    "frac_list_lines": 0.5806,
+    "n_colon_lines": 1.0,
+    "avg_word_len": 5.0883,
+    "avg_sent_len": 11.8767,
+    "ttr_first200": 0.615,
+    "rate_I": 0.0,
+    "rate_you": 0.0035,
+    "rate_hedge": 0.0,
+    "rate_exclaim": 0.0,
+    "rate_question": 0.0,
+    "rate_colon": 3.8754,
+    "rate_semicolon": 0.0,
+    "rate_dash": 0.0,
+    "rate_paren": 0.3213,
+    "n_emoji": 0.0,
+    "opens_affirmation": 0.0,
+    "opens_restating": 0.0,
+    "has_conclusion": 0.0,
+    "offers_more_help": 0.0,
+    "ends_with_question": 0.0
+   },
+   "Claude": {
+    "n_chars": 1310.5,
+    "n_words": 203.5,
+    "n_lines": 17.0,
+    "n_paragraphs": 7.0,
+    "n_headers": 0.0,
+    "n_bullets": 0.0,
+    "n_numbered": 4.0,
+    "n_bold": 0.0,
+    "n_code_blocks": 0.0,
+    "frac_list_lines": 0.5714,
+    "n_colon_lines": 1.0,
+    "avg_word_len": 5.0504,
+    "avg_sent_len": 15.25,
+    "ttr_first200": 0.595,
+    "rate_I": 0.0,
+    "rate_you": 0.0,
+    "rate_hedge": 0.0,
+    "rate_exclaim": 0.0,
+    "rate_question": 0.0,
+    "rate_colon": 2.7559,
+    "rate_semicolon": 0.0,
+    "rate_dash": 0.0,
+    "rate_paren": 0.0,
+    "n_emoji": 0.0,
+    "opens_affirmation": 0.0,
+    "opens_restating": 0.0,
+    "has_conclusion": 0.0,
+    "offers_more_help": 0.0,
+    "ends_with_question": 0.0
+   },
+   "Gemini": {
+    "n_chars": 1410.0,
+    "n_words": 223.0,
+    "n_lines": 19.0,
+    "n_paragraphs": 6.0,
+    "n_headers": 0.0,
+    "n_bullets": 0.0,
+    "n_numbered": 0.0,
+    "n_bold": 0.0,
+    "n_code_blocks": 0.0,
+    "frac_list_lines": 0.625,
+    "n_colon_lines": 0.0,
+    "avg_word_len": 4.9967,
+    "avg_sent_len": 11.9783,
+    "ttr_first200": 0.565,
+    "rate_I": 0.0,
+    "rate_you": 0.0,
+    "rate_hedge": 0.0,
+    "rate_exclaim": 0.0,
+    "rate_question": 0.0,
+    "rate_colon": 2.513,
+    "rate_semicolon": 0.0,
+    "rate_dash": 0.0,
+    "rate_paren": 0.0,
+    "n_emoji": 0.0,
+    "opens_affirmation": 0.0,
+    "opens_restating": 0.0,
+    "has_conclusion": 0.0,
+    "offers_more_help": 0.0,
+    "ends_with_question": 0.0
+   },
+   "Llama": {
+    "n_chars": 1939.5,
+    "n_words": 297.5,
+    "n_lines": 21.0,
+    "n_paragraphs": 7.0,
+    "n_headers": 0.0,
+    "n_bullets": 0.0,
+    "n_numbered": 2.0,
+    "n_bold": 5.0,
+    "n_code_blocks": 0.0,
+    "frac_list_lines": 0.5,
+    "n_colon_lines": 1.0,
+    "avg_word_len": 4.986,
+    "avg_sent_len": 13.6886,
+    "ttr_first200": 0.58,
+    "rate_I": 0.0,
+    "rate_you": 0.0038,
+    "rate_hedge": 0.0,
+    "rate_exclaim": 0.1514,
+    "rate_question": 0.0,
+    "rate_colon": 3.8574,
+    "rate_semicolon": 0.0,
+    "rate_dash": 0.0,
+    "rate_paren": 0.6012,
+    "n_emoji": 0.0,
+    "opens_affirmation": 0.0,
+    "opens_restating": 0.0,
+    "has_conclusion": 0.0,
+    "offers_more_help": 0.0,
+    "ends_with_question": 0.0
+   },
+   "Qwen": {
+    "n_chars": 1534.0,
+    "n_words": 244.0,
+    "n_lines": 15.0,
+    "n_paragraphs": 6.0,
+    "n_headers": 0.0,
+    "n_bullets": 0.0,
+    "n_numbered": 3.0,
+    "n_bold": 0.0,
+    "n_code_blocks": 0.0,
+    "frac_list_lines": 0.4086,
+    "n_colon_lines": 1.0,
+    "avg_word_len": 5.0029,
+    "avg_sent_len": 16.0217,
+    "ttr_first200": 0.6131,
+    "rate_I": 0.0,
+    "rate_you": 0.0,
+    "rate_hedge": 0.0021,
+    "rate_exclaim": 0.0,
+    "rate_question": 0.0,
+    "rate_colon": 2.669,
+    "rate_semicolon": 0.0,
+    "rate_dash": 0.0,
+    "rate_paren": 0.0,
+    "n_emoji": 0.0,
+    "opens_affirmation": 0.0,
+    "opens_restating": 0.0,
+    "has_conclusion": 0.0,
+    "offers_more_help": 0.0,
+    "ends_with_question": 0.0
+   },
+   "DeepSeek": {
+    "n_chars": 1065.0,
+    "n_words": 173.5,
+    "n_lines": 10.0,
+    "n_paragraphs": 3.0,
+    "n_headers": 0.0,
+    "n_bullets": 0.0,
+    "n_numbered": 0.0,
+    "n_bold": 0.0,
+    "n_code_blocks": 0.0,
+    "frac_list_lines": 0.0,
+    "n_colon_lines": 0.0,
+    "avg_word_len": 4.8279,
+    "avg_sent_len": 16.3958,
+    "ttr_first200": 0.56,
+    "rate_I": 0.0,
+    "rate_you": 0.0,
+    "rate_hedge": 0.0,
+    "rate_exclaim": 0.0,
+    "rate_question": 0.0,
+    "rate_colon": 1.065,
+    "rate_semicolon": 0.0,
+    "rate_dash": 0.0,
+    "rate_paren": 0.0,
+    "n_emoji": 0.0,
+    "opens_affirmation": 0.0,
+    "opens_restating": 0.0,
+    "has_conclusion": 0.0,
+    "offers_more_help": 0.0,
+    "ends_with_question": 0.0
+   }
+  },
+  "means": {
+   "GPT": {
+    "n_chars": 1872.3072,
+    "n_words": 270.5211,
+    "n_lines": 28.4876,
+    "n_paragraphs": 8.8557,
+    "n_headers": 1.6107,
+    "n_bullets": 6.5784,
+    "n_numbered": 5.0846,
+    "n_bold": 7.5448,
+    "n_code_blocks": 0.204,
+    "frac_list_lines": 0.4538,
+    "n_colon_lines": 2.4552,
+    "avg_word_len": 5.0998,
+    "avg_sent_len": 12.7641,
+    "ttr_first200": 0.6279,
+    "rate_I": 0.0045,
+    "rate_you": 0.0169,
+    "rate_hedge": 0.0046,
+    "rate_exclaim": 0.7393,
+    "rate_question": 0.4975,
+    "rate_colon": 4.1957,
+    "rate_semicolon": 0.1495,
+    "rate_dash": 2.0934,
+    "rate_paren": 1.6895,
+    "n_emoji": 0.1704,
+    "opens_affirmation": 0.2886,
+    "opens_restating": 0.2276,
+    "has_conclusion": 0.1331,
+    "offers_more_help": 0.0796,
+    "ends_with_question": 0.0261
+   },
+   "Claude": {
+    "n_chars": 1388.5174,
+    "n_words": 207.2525,
+    "n_lines": 19.1667,
+    "n_paragraphs": 7.204,
+    "n_headers": 0.051,
+    "n_bullets": 2.2139,
+    "n_numbered": 4.7537,
+    "n_bold": 0.0037,
+    "n_code_blocks": 0.1045,
+    "frac_list_lines": 0.457,
+    "n_colon_lines": 1.7226,
+    "avg_word_len": 5.0702,
+    "avg_sent_len": 14.8441,
+    "ttr_first200": 0.6025,
+    "rate_I": 0.0052,
+    "rate_you": 0.0149,
+    "rate_hedge": 0.0046,
+    "rate_exclaim": 0.3365,
+    "rate_question": 0.2226,
+    "rate_colon": 3.4778,
+    "rate_semicolon": 0.0754,
+    "rate_dash": 1.042,
+    "rate_paren": 1.5919,
+    "n_emoji": 0.0796,
+    "opens_affirmation": 0.1082,
+    "opens_restating": 0.3955,
+    "has_conclusion": 0.0983,
+    "offers_more_help": 0.0684,
+    "ends_with_question": 0.01
+   },
+   "Gemini": {
+    "n_chars": 1458.153,
+    "n_words": 217.5684,
+    "n_lines": 21.9664,
+    "n_paragraphs": 7.0945,
+    "n_headers": 0.0833,
+    "n_bullets": 6.0983,
+    "n_numbered": 3.5821,
+    "n_bold": 4.2413,
+    "n_code_blocks": 0.1306,
+    "frac_list_lines": 0.5121,
+    "n_colon_lines": 0.8657,
+    "avg_word_len": 5.0456,
+    "avg_sent_len": 12.2779,
+    "ttr_first200": 0.6091,
+    "rate_I": 0.0045,
+    "rate_you": 0.0132,
+    "rate_hedge": 0.0033,
+    "rate_exclaim": 0.1877,
+    "rate_question": 0.298,
+    "rate_colon": 3.8736,
+    "rate_semicolon": 0.1442,
+    "rate_dash": 1.7629,
+    "rate_paren": 1.783,
+    "n_emoji": 0.0634,
+    "opens_affirmation": 0.0162,
+    "opens_restating": 0.1244,
+    "has_conclusion": 0.0684,
+    "offers_more_help": 0.0187,
+    "ends_with_question": 0.0149
+   },
+   "Llama": {
+    "n_chars": 1918.6915,
+    "n_words": 288.2973,
+    "n_lines": 25.4117,
+    "n_paragraphs": 8.2351,
+    "n_headers": 0.0274,
+    "n_bullets": 3.7886,
+    "n_numbered": 5.2139,
+    "n_bold": 6.398,
+    "n_code_blocks": 0.1381,
+    "frac_list_lines": 0.4269,
+    "n_colon_lines": 1.8557,
+    "avg_word_len": 5.0094,
+    "avg_sent_len": 13.8395,
+    "ttr_first200": 0.5919,
+    "rate_I": 0.0057,
+    "rate_you": 0.0155,
+    "rate_hedge": 0.0039,
+    "rate_exclaim": 0.8201,
+    "rate_question": 0.3795,
+    "rate_colon": 4.3588,
+    "rate_semicolon": 0.1102,
+    "rate_dash": 0.4027,
+    "rate_paren": 1.9884,
+    "n_emoji": 0.0187,
+    "opens_affirmation": 0.0012,
+    "opens_restating": 0.4789,
+    "has_conclusion": 0.1505,
+    "offers_more_help": 0.0896,
+    "ends_with_question": 0.0286
+   },
+   "Qwen": {
+    "n_chars": 1549.8346,
+    "n_words": 235.2811,
+    "n_lines": 17.7711,
+    "n_paragraphs": 6.4552,
+    "n_headers": 0.056,
+    "n_bullets": 1.5597,
+    "n_numbered": 4.9963,
+    "n_bold": 1.847,
+    "n_code_blocks": 0.1356,
+    "frac_list_lines": 0.4164,
+    "n_colon_lines": 1.204,
+    "avg_word_len": 5.0505,
+    "avg_sent_len": 15.5853,
+    "ttr_first200": 0.633,
+    "rate_I": 0.0038,
+    "rate_you": 0.0142,
+    "rate_hedge": 0.0053,
+    "rate_exclaim": 0.565,
+    "rate_question": 0.3079,
+    "rate_colon": 3.4058,
+    "rate_semicolon": 0.1294,
+    "rate_dash": 0.7129,
+    "rate_paren": 1.7394,
+    "n_emoji": 0.1231,
+    "opens_affirmation": 0.1082,
+    "opens_restating": 0.2264,
+    "has_conclusion": 0.1194,
+    "offers_more_help": 0.051,
+    "ends_with_question": 0.01
+   },
+   "DeepSeek": {
+    "n_chars": 1151.9826,
+    "n_words": 183.9863,
+    "n_lines": 13.0,
+    "n_paragraphs": 4.3595,
+    "n_headers": 0.0336,
+    "n_bullets": 1.0709,
+    "n_numbered": 3.1082,
+    "n_bold": 0.0473,
+    "n_code_blocks": 0.0846,
+    "frac_list_lines": 0.3307,
+    "n_colon_lines": 0.9789,
+    "avg_word_len": 4.8319,
+    "avg_sent_len": 15.8804,
+    "ttr_first200": 0.5812,
+    "rate_I": 0.0057,
+    "rate_you": 0.0162,
+    "rate_hedge": 0.0054,
+    "rate_exclaim": 0.3965,
+    "rate_question": 0.3372,
+    "rate_colon": 2.5663,
+    "rate_semicolon": 0.1287,
+    "rate_dash": 0.3284,
+    "rate_paren": 1.2887,
+    "n_emoji": 1.7251,
+    "opens_affirmation": 0.1244,
+    "opens_restating": 0.2799,
+    "has_conclusion": 0.1468,
+    "offers_more_help": 0.0498,
+    "ends_with_question": 0.0149
+   }
+  },
+  "groups": {
+   "n_chars": "length",
+   "n_words": "length",
+   "n_lines": "length",
+   "n_paragraphs": "length",
+   "n_headers": "formatting",
+   "n_bullets": "formatting",
+   "n_numbered": "formatting",
+   "n_bold": "formatting",
+   "n_code_blocks": "formatting",
+   "frac_list_lines": "formatting",
+   "n_colon_lines": "formatting",
+   "avg_word_len": "lexical",
+   "avg_sent_len": "lexical",
+   "ttr_first200": "lexical",
+   "rate_I": "lexical",
+   "rate_you": "lexical",
+   "rate_hedge": "lexical",
+   "rate_exclaim": "punctuation",
+   "rate_question": "punctuation",
+   "rate_colon": "punctuation",
+   "rate_semicolon": "punctuation",
+   "rate_dash": "punctuation",
+   "rate_paren": "punctuation",
+   "n_emoji": "punctuation",
+   "opens_affirmation": "discourse",
+   "opens_restating": "discourse",
+   "has_conclusion": "discourse",
+   "offers_more_help": "discourse",
+   "ends_with_question": "discourse"
+  }
+ },
+ "top_ngrams": {
+  "GPT": {
+   "lexical": [
+    "\u2019 s",
+    "Sure",
+    "s",
+    "! Here",
+    "Sure !",
+    ". Here",
+    "Here",
+    "Certainly !",
+    "Certainly",
+    "Sure ,",
+    "Here \u2019",
+    "These",
+    "s a",
+    "might",
+    "\\n These",
+    "both",
+    ", here",
+    "Yes .",
+    "these",
+    "here",
+    "Here are",
+    "you",
+    "\u2019 t",
+    "Your",
+    "For",
+    "under",
+    "sPiDeR",
+    "Each",
+    "you can",
+    ", you",
+    "common"
+   ],
+   "symbol": [
+    "# #",
+    "* *",
+    "#",
+    "- *",
+    "\u2019",
+    "*",
+    ". *",
+    "\\n -",
+    "* :",
+    "\\n #",
+    "!",
+    "\\",
+    "\\ [",
+    "\\ ]",
+    "- -",
+    "\\ (",
+    "\\ )",
+    "* -",
+    "\u2014",
+    ") .",
+    "\\n \\",
+    "* \\n",
+    "?",
+    ".",
+    "- `",
+    ", \\n",
+    "- \\n",
+    ") *",
+    ": \\n"
+   ]
+  },
+  "Claude": {
+   "lexical": [
+    "I apologize",
+    "apologize",
+    "apologize ,",
+    "the",
+    "or",
+    "on",
+    "your",
+    "Here's",
+    "Here",
+    "to",
+    "and",
+    "several",
+    "Claude",
+    "using",
+    "preferences",
+    "based on",
+    "\\n However",
+    "based",
+    "but I",
+    "this",
+    "Here are",
+    "Some",
+    "points",
+    "\\n Therefore",
+    "most",
+    "of",
+    "their",
+    "\\n The",
+    ": The",
+    "- The",
+    "\\n Remember",
+    "best",
+    "solve this",
+    "When",
+    "Here is",
+    "directly",
+    "using the",
+    "may",
+    "containing",
+    "related"
+   ],
+   "symbol": [
+    "\\n \\n",
+    ": \\n",
+    ". \\n",
+    "\\n 1",
+    "\\n",
+    ":",
+    "-",
+    "\\n -",
+    ",",
+    ") .",
+    "\\n 2",
+    "- 1",
+    "\u00d7",
+    ") `",
+    "6 .",
+    "2 .",
+    "\\n 6",
+    "\\n 3",
+    "1",
+    "6"
+   ]
+  },
+  "Gemini": {
+   "lexical": [
+    "* The",
+    "- The",
+    "Therefore ,",
+    "Therefore",
+    "Alps",
+    "It is",
+    "* This",
+    "you are",
+    "that is",
+    "cannot",
+    "it is",
+    "Positive",
+    ". This",
+    "They",
+    "yes",
+    "Fruit",
+    "The provided",
+    ". I",
+    "Assault",
+    ". They",
+    ". Therefore",
+    "- This",
+    "Spanish",
+    "Chihuahua",
+    "Social",
+    "Admin",
+    "and they",
+    "is no",
+    "2 stars",
+    "20 minutes",
+    "can also",
+    "world",
+    "- Use",
+    "cannot be",
+    "life .",
+    "* Be",
+    "a variety",
+    "variety of",
+    "This",
+    "\" Sweet",
+    "do not",
+    "does not",
+    "bonsoir",
+    "Daisy",
+    "verb",
+    "isotropic"
+   ],
+   "symbol": [
+    ": *",
+    "*",
+    "\\n -",
+    "* *",
+    "* \\n",
+    "\\n *",
+    ". *",
+    "\\n",
+    ". #",
+    "* 1",
+    "1992",
+    ". \\n",
+    "1973",
+    "'"
+   ]
+  },
+  "Llama": {
+   "lexical": [
+    "Here is",
+    "Here",
+    "What",
+    "What a",
+    "question",
+    ", with",
+    "question !",
+    "Here's",
+    "NOT",
+    "* The",
+    "some",
+    ", and",
+    "So",
+    "Here's a",
+    "Here are",
+    "that's",
+    "e",
+    ", of",
+    "* Step",
+    "\\n Note",
+    "it's",
+    "sense",
+    "classic",
+    "rewritten",
+    ", to",
+    "a more",
+    "I",
+    "Note",
+    "are some",
+    "* Use",
+    "a great",
+    "would categorize",
+    "\\n The",
+    "categorize",
+    "dollars",
+    ". g",
+    "e .",
+    "A",
+    "g ."
+   ],
+   "symbol": [
+    "\\n *",
+    "*",
+    "* *",
+    "* :",
+    "!",
+    "* \\n",
+    "! \\n",
+    ": \\n",
+    ", ,",
+    ". *",
+    ". .",
+    "\\n \"",
+    "(",
+    "\"",
+    ")",
+    "\" .",
+    ", (",
+    ":",
+    "?",
+    "\" ,",
+    "` \\n"
+   ]
+  },
+  "Qwen": {
+   "lexical": [
+    "but",
+    "or",
+    "might",
+    ", but",
+    "like",
+    "Category :",
+    "Category",
+    ", and",
+    ". Here's",
+    "Remember ,",
+    "Remember",
+    "it's",
+    "or the",
+    ", like",
+    ". It's",
+    "It's",
+    "Progress \"",
+    "\\n Remember",
+    "Yes .",
+    "one",
+    "for",
+    "during",
+    "not",
+    ". If",
+    ". This",
+    "A",
+    "typically",
+    "due",
+    "Offensive",
+    "and the",
+    "which",
+    "with",
+    "for the",
+    ", for",
+    "due to",
+    "note",
+    "note that",
+    ", which",
+    "Progress",
+    "just a",
+    "Here's a",
+    ", as",
+    "can vary",
+    "knife \\n",
+    "crucial",
+    ", especially",
+    "or a",
+    "which is",
+    "here's",
+    "especially",
+    "its",
+    "AI",
+    "vary"
+   ],
+   "symbol": [
+    "* :",
+    ")",
+    "(",
+    "\u7684",
+    ". 1",
+    ",",
+    "7 ."
+   ]
+  },
+  "DeepSeek": {
+   "lexical": [
+    "\\n Step",
+    "is",
+    "and",
+    "It is",
+    "important",
+    "also",
+    "Overall ,",
+    "important to",
+    "Overall",
+    "that",
+    "it is",
+    "that is",
+    "can",
+    "Sure ,",
+    "\\n Overall",
+    "many",
+    "of",
+    "Step",
+    "that are",
+    "will",
+    "as",
+    "other",
+    "such as",
+    "and is",
+    "as well",
+    "of the",
+    "the",
+    "is a",
+    ", I",
+    "well as",
+    "all",
+    "is known",
+    "\" Thrive",
+    "to",
+    "way",
+    "such",
+    "can be",
+    "you want",
+    "is important",
+    "it",
+    "markdown",
+    ". In",
+    "are",
+    "try",
+    ". The",
+    ", including",
+    "project",
+    "markdown \\n",
+    "including",
+    "determine",
+    "Sure",
+    "For example",
+    "can also",
+    "and to",
+    "Hello !",
+    "to the",
+    "` markdown"
+   ],
+   "symbol": [
+    "* 1",
+    "=",
+    "."
+   ]
+  }
+ },
+ "typography": {
+  "GPT": {
+   "curly_apostrophe": 0.21890547263681592,
+   "em_dash": 0.022388059701492536,
+   "starts_certainly": 0.1044776119402985,
+   "starts_here": 0.007462686567164179,
+   "apologize": 0.0,
+   "what_a_question": 0.0,
+   "cjk": 0.0037313432835820895
+  },
+  "Claude": {
+   "curly_apostrophe": 0.0,
+   "em_dash": 0.0024875621890547263,
+   "starts_certainly": 0.048507462686567165,
+   "starts_here": 0.17164179104477612,
+   "apologize": 0.03980099502487562,
+   "what_a_question": 0.0,
+   "cjk": 0.0024875621890547263
+  },
+  "Gemini": {
+   "curly_apostrophe": 0.0,
+   "em_dash": 0.0,
+   "starts_certainly": 0.0,
+   "starts_here": 0.0012437810945273632,
+   "apologize": 0.0012437810945273632,
+   "what_a_question": 0.0,
+   "cjk": 0.0024875621890547263
+  },
+  "Llama": {
+   "curly_apostrophe": 0.0012437810945273632,
+   "em_dash": 0.0,
+   "starts_certainly": 0.0,
+   "starts_here": 0.27114427860696516,
+   "apologize": 0.0012437810945273632,
+   "what_a_question": 0.07213930348258707,
+   "cjk": 0.0024875621890547263
+  },
+  "Qwen": {
+   "curly_apostrophe": 0.0037313432835820895,
+   "em_dash": 0.0,
+   "starts_certainly": 0.01990049751243781,
+   "starts_here": 0.017412935323383085,
+   "apologize": 0.0,
+   "what_a_question": 0.0,
+   "cjk": 0.05845771144278607
+  },
+  "DeepSeek": {
+   "curly_apostrophe": 0.0,
+   "em_dash": 0.0012437810945273632,
+   "starts_certainly": 0.012437810945273632,
+   "starts_here": 0.04477611940298507,
+   "apologize": 0.0,
+   "what_a_question": 0.0,
+   "cjk": 0.0024875621890547263
+  }
+ },
+ "openers": {
+  "GPT": [
+   [
+    "Certainly Here",
+    0.034
+   ],
+   [
+    "Sure Here",
+    0.024
+   ],
+   [
+    "Of course",
+    0.022
+   ],
+   [
+    "Sure here",
+    0.017
+   ],
+   [
+    "Certainly Below",
+    0.016
+   ],
+   [
+    "Sure I'd",
+    0.014
+   ]
+  ],
+  "Claude": [
+   [
+    "Here are",
+    0.065
+   ],
+   [
+    "Here is",
+    0.056
+   ],
+   [
+    "I apologize",
+    0.04
+   ],
+   [
+    "There are",
+    0.037
+   ],
+   [
+    "Here's a",
+    0.036
+   ],
+   [
+    "Certainly Here's",
+    0.031
+   ]
+  ],
+  "Gemini": [
+   [
+    "In the",
+    0.019
+   ],
+   [
+    "It is",
+    0.012
+   ],
+   [
+    "Ingredients cup",
+    0.009
+   ],
+   [
+    "",
+    0.007
+   ],
+   [
+    "python def",
+    0.007
+   ],
+   [
+    "In a",
+    0.006
+   ]
+  ],
+  "Llama": [
+   [
+    "What a",
+    0.127
+   ],
+   [
+    "Here is",
+    0.114
+   ],
+   [
+    "Here are",
+    0.09
+   ],
+   [
+    "Here's a",
+    0.055
+   ],
+   [
+    "What an",
+    0.024
+   ],
+   [
+    "There are",
+    0.012
+   ]
+  ],
+  "Qwen": [
+   [
+    "There are",
+    0.035
+   ],
+   [
+    "Of course",
+    0.032
+   ],
+   [
+    "As an",
+    0.02
+   ],
+   [
+    "Sure here's",
+    0.02
+   ],
+   [
+    "In the",
+    0.012
+   ],
+   [
+    "Here's a",
+    0.011
+   ]
+  ],
+  "DeepSeek": [
+   [
+    "There are",
+    0.05
+   ],
+   [
+    "As an",
+    0.027
+   ],
+   [
+    "Sure here",
+    0.025
+   ],
+   [
+    "Here is",
+    0.019
+   ],
+   [
+    "Sure here's",
+    0.017
+   ],
+   [
+    "Here are",
+    0.015
+   ]
+  ]
+ },
+ "cnn_filters": {
+  "GPT": [
+   {
+    "filter": 310,
+    "width": 5,
+    "weight": 0.073,
+    "top_ngrams": [
+     [
+      "e . g . ,",
+      4
+     ],
+     [
+      "# # # 3 .",
+      3
+     ],
+     [
+      "# # # Step 1",
+      2
+     ],
+     [
+      "# # # Explanation :",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 170,
+    "width": 3,
+    "weight": 0.072,
+    "top_ngrams": [
+     [
+      "\\n # #",
+      34
+     ],
+     [
+      "Certainly ! Here",
+      2
+     ],
+     [
+      "\\n \\ [",
+      2
+     ],
+     [
+      "_ _ \"",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 248,
+    "width": 4,
+    "weight": 0.069,
+    "top_ngrams": [
+     [
+      "# # # 2",
+      6
+     ],
+     [
+      "# # # #",
+      4
+     ],
+     [
+      "# # # Explanation",
+      3
+     ],
+     [
+      "# # # Step",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 297,
+    "width": 4,
+    "weight": 0.066,
+    "top_ngrams": [
+     [
+      "# # # 2",
+      6
+     ],
+     [
+      "# # # Explanation",
+      3
+     ],
+     [
+      "# # # Instructions",
+      2
+     ],
+     [
+      "# # # Step",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 306,
+    "width": 5,
+    "weight": 0.065,
+    "top_ngrams": [
+     [
+      "Certainly ! Below is a",
+      4
+     ],
+     [
+      "Sure ! Here's a simple",
+      3
+     ],
+     [
+      "Sure , here is a",
+      2
+     ],
+     [
+      "television . Here are a",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 330,
+    "width": 5,
+    "weight": 0.065,
+    "top_ngrams": [
+     [
+      "# # # 2 .",
+      3
+     ],
+     [
+      "# # # Ingredients :",
+      2
+     ],
+     [
+      "\u2019 s a step -",
+      2
+     ],
+     [
+      "Sure , here is a",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 369,
+    "width": 5,
+    "weight": 0.062,
+    "top_ngrams": [
+     [
+      "Here \u2019 s a step",
+      2
+     ],
+     [
+      "_ Sure ! Here's a",
+      2
+     ],
+     [
+      "Here are a few notable",
+      1
+     ],
+     [
+      "each answer , we can",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 336,
+    "width": 5,
+    "weight": 0.058,
+    "top_ngrams": [
+     [
+      ". Here \u2019 s a",
+      4
+     ],
+     [
+      "# # # 3 .",
+      4
+     ],
+     [
+      "# # # Ingredients :",
+      2
+     ],
+     [
+      "# # Step 2 :",
+      2
+     ]
+    ]
+   }
+  ],
+  "Claude": [
+   {
+    "filter": 369,
+    "width": 5,
+    "weight": 0.063,
+    "top_ngrams": [
+     [
+      "and problem - solving skills",
+      2
+     ],
+     [
+      "Here are a few notable",
+      1
+     ],
+     [
+      "Here are some tips to",
+      1
+     ],
+     [
+      ", or until a knife",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 371,
+    "width": 5,
+    "weight": 0.06,
+    "top_ngrams": [
+     [
+      "Practice regularly : Consistent practice",
+      2
+     ],
+     [
+      "actors began their careers on",
+      1
+     ],
+     [
+      "Pay attention to the number",
+      1
+     ],
+     [
+      "crust start to brown too",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 263,
+    "width": 4,
+    "weight": 0.06,
+    "top_ngrams": [
+     [
+      "\\n \\n 5 .",
+      36
+     ],
+     [
+      "\\n \\n Explanation :",
+      7
+     ],
+     [
+      "\\n \\n Ingredients :",
+      2
+     ],
+     [
+      ") \\n 5 .",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 309,
+    "width": 5,
+    "weight": 0.059,
+    "top_ngrams": [
+     [
+      ". \\n \\n 4 .",
+      39
+     ],
+     [
+      ". \\n \\n 2 .",
+      7
+     ],
+     [
+      "\" \\n \\n 4 .",
+      1
+     ],
+     [
+      "milk \\n - 2 large",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 392,
+    "width": 5,
+    "weight": 0.054,
+    "top_ngrams": [
+     [
+      "The Hitchhiker's Guide to the",
+      2
+     ],
+     [
+      "debut in 1975 in the",
+      1
+     ],
+     [
+      "often the easiest to solve",
+      1
+     ],
+     [
+      "day to work on your",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 372,
+    "width": 5,
+    "weight": 0.052,
+    "top_ngrams": [
+     [
+      "_ _ Here is a",
+      7
+     ],
+     [
+      "_ _ Here are some",
+      2
+     ],
+     [
+      "_ _ Here are a",
+      2
+     ],
+     [
+      "play \" Does a Tiger",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 334,
+    "width": 5,
+    "weight": 0.051,
+    "top_ngrams": [
+     [
+      ". \" \\n \\n 5",
+      1
+     ],
+     [
+      "letters . \\n \\n 5",
+      1
+     ],
+     [
+      "form . \\n \\n 5",
+      1
+     ],
+     [
+      "desired . \\n \\n Tips",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 343,
+    "width": 5,
+    "weight": 0.051,
+    "top_ngrams": [
+     [
+      "include : \\n \\n 1",
+      4
+     ],
+     [
+      "examples : \\n \\n 1",
+      3
+     ],
+     [
+      "Explanation : \\n \\n 1",
+      3
+     ],
+     [
+      "started : \\n \\n 1",
+      2
+     ]
+    ]
+   }
+  ],
+  "Gemini": [
+   {
+    "filter": 397,
+    "width": 5,
+    "weight": 0.072,
+    "top_ngrams": [
+     [
+      "Instructions : * * \\n",
+      2
+     ],
+     [
+      "_ _ * * Day",
+      2
+     ],
+     [
+      "_ _ _ - Barbra",
+      1
+     ],
+     [
+      "This will make it easier",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 165,
+    "width": 3,
+    "weight": 0.061,
+    "top_ngrams": [
+     [
+      "1 teaspoon baking",
+      2
+     ],
+     [
+      "for i in",
+      2
+     ],
+     [
+      "Close \\n -",
+      1
+     ],
+     [
+      ". Use a",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 255,
+    "width": 4,
+    "weight": 0.059,
+    "top_ngrams": [
+     [
+      "\\n \\n * *",
+      17
+     ],
+     [
+      "\\n \\n * It",
+      2
+     ],
+     [
+      "\\n \\n Thank you",
+      2
+     ],
+     [
+      "Roberts \\n - Harrison",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 122,
+    "width": 3,
+    "weight": 0.058,
+    "top_ngrams": [
+     [
+      "\\n - *",
+      3
+     ],
+     [
+      "\\n * *",
+      3
+     ],
+     [
+      "Instructions : *",
+      2
+     ],
+     [
+      "Goals : *",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 386,
+    "width": 5,
+    "weight": 0.056,
+    "top_ngrams": [
+     [
+      "_ In the realm of",
+      2
+     ],
+     [
+      "- Glenn Close \\n -",
+      1
+     ],
+     [
+      "back to the puzzle later",
+      1
+     ],
+     [
+      "with your shoulders relaxed and",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 37,
+    "width": 2,
+    "weight": 0.056,
+    "top_ngrams": [
+     [
+      "variety of",
+      2
+     ],
+     [
+      "` `",
+      2
+     ],
+     [
+      "number .",
+      2
+     ],
+     [
+      "after the",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 223,
+    "width": 4,
+    "weight": 0.056,
+    "top_ngrams": [
+     [
+      "important to be patient",
+      2
+     ],
+     [
+      "\\n ` ` `",
+      2
+     ],
+     [
+      "\\n - Christopher Reeve",
+      1
+     ],
+     [
+      "of an answer ,",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 238,
+    "width": 4,
+    "weight": 0.054,
+    "top_ngrams": [
+     [
+      "- Lin - Manuel",
+      1
+     ],
+     [
+      "sure you understand what",
+      1
+     ],
+     [
+      "\\n - Avoid hunching",
+      1
+     ],
+     [
+      "- made pie crust",
+      1
+     ]
+    ]
+   }
+  ],
+  "Llama": [
+   {
+    "filter": 113,
+    "width": 3,
+    "weight": 0.063,
+    "top_ngrams": [
+     [
+      "* : This",
+      3
+     ],
+     [
+      "great question !",
+      3
+     ],
+     [
+      "assist you !",
+      2
+     ],
+     [
+      "great choice !",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 382,
+    "width": 5,
+    "weight": 0.063,
+    "top_ngrams": [
+     [
+      ": \\n \\n * *",
+      38
+     ],
+     [
+      ". \\n \\n * *",
+      6
+     ],
+     [
+      ": Before starring in TV's",
+      1
+     ],
+     [
+      "? \\n \\n * Do",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 15,
+    "width": 2,
+    "weight": 0.061,
+    "top_ngrams": [
+     [
+      "Here are",
+      36
+     ],
+     [
+      "Here is",
+      22
+     ],
+     [
+      "a great",
+      5
+     ],
+     [
+      "A classic",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 82,
+    "width": 2,
+    "weight": 0.057,
+    "top_ngrams": [
+     [
+      "question !",
+      6
+     ],
+     [
+      "idea !",
+      3
+     ],
+     [
+      "project !",
+      3
+     ],
+     [
+      ", which",
+      3
+     ]
+    ]
+   },
+   {
+    "filter": 298,
+    "width": 4,
+    "weight": 0.057,
+    "top_ngrams": [
+     [
+      "_ Here is a",
+      15
+     ],
+     [
+      "_ _ What a",
+      8
+     ],
+     [
+      "_ Here are some",
+      5
+     ],
+     [
+      "_ _ Here's a",
+      4
+     ]
+    ]
+   },
+   {
+    "filter": 257,
+    "width": 4,
+    "weight": 0.056,
+    "top_ngrams": [
+     [
+      "some examples : \\n",
+      3
+     ],
+     [
+      "you started : \\n",
+      2
+     ],
+     [
+      "corrected code : \\n",
+      2
+     ],
+     [
+      "can write : \\n",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 300,
+    "width": 5,
+    "weight": 0.056,
+    "top_ngrams": [
+     [
+      ": \\n \\n * *",
+      36
+     ],
+     [
+      "! _ _ _ _",
+      6
+     ],
+     [
+      "! ) , Jackman originated",
+      1
+     ],
+     [
+      ": Start by practicing individual",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 374,
+    "width": 5,
+    "weight": 0.053,
+    "top_ngrams": [
+     [
+      "Here is a Python script",
+      2
+     ],
+     [
+      ": Before playing Wolverine in",
+      1
+     ],
+     [
+      "specific clue you're stuck on",
+      1
+     ],
+     [
+      "paying attention to their shapes",
+      1
+     ]
+    ]
+   }
+  ],
+  "Qwen": [
+   {
+    "filter": 38,
+    "width": 2,
+    "weight": 0.061,
+    "top_ngrams": [
+     [
+      "This ensures",
+      2
+     ],
+     [
+      "you need",
+      2
+     ],
+     [
+      "which is",
+      2
+     ],
+     [
+      "It's a",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 208,
+    "width": 4,
+    "weight": 0.061,
+    "top_ngrams": [
+     [
+      "6 . 1 /",
+      2
+     ],
+     [
+      "- winning film actress",
+      1
+     ],
+     [
+      "Crossword puzzles can be",
+      1
+     ],
+     [
+      "of letters . Practice",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 317,
+    "width": 5,
+    "weight": 0.054,
+    "top_ngrams": [
+     [
+      "numerous Broadway shows , such",
+      1
+     ],
+     [
+      "multiple possible answers , look",
+      1
+     ],
+     [
+      ": Hold your pen or",
+      1
+     ],
+     [
+      "a fun and delicious fall",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 143,
+    "width": 3,
+    "weight": 0.053,
+    "top_ngrams": [
+     [
+      "\\n Please note",
+      2
+     ],
+     [
+      "decision - making",
+      2
+     ],
+     [
+      "Harris - Known",
+      1
+     ],
+     [
+      "Crossword puzzles can",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 261,
+    "width": 4,
+    "weight": 0.052,
+    "top_ngrams": [
+     [
+      ", here's a Python",
+      2
+     ],
+     [
+      "also has a successful",
+      1
+     ],
+     [
+      "help you solve other",
+      1
+     ],
+     [
+      "If you're starting from",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 258,
+    "width": 4,
+    "weight": 0.05,
+    "top_ngrams": [
+     [
+      "a step - by",
+      3
+     ],
+     [
+      "an Oscar - winning",
+      1
+     ],
+     [
+      "* : Start by",
+      1
+     ],
+     [
+      ": Hold your pen",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 271,
+    "width": 4,
+    "weight": 0.049,
+    "top_ngrams": [
+     [
+      "Here's a step -",
+      3
+     ],
+     [
+      "Here's a simple recipe",
+      2
+     ],
+     [
+      "Foster has starred in",
+      1
+     ],
+     [
+      "have a few letters",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 209,
+    "width": 4,
+    "weight": 0.048,
+    "top_ngrams": [
+     [
+      "his performance in \"",
+      1
+     ],
+     [
+      "for ones that seem",
+      1
+     ],
+     [
+      "Keep equal space between",
+      1
+     ],
+     [
+      "made pie crust (",
+      1
+     ]
+    ]
+   }
+  ],
+  "DeepSeek": [
+   {
+    "filter": 381,
+    "width": 5,
+    "weight": 0.065,
+    "top_ngrams": [
+     [
+      "be happy to help you",
+      2
+     ],
+     [
+      "Some famous actors known for",
+      1
+     ],
+     [
+      "so don't be afraid to",
+      1
+     ],
+     [
+      "- day Strait of Gibraltar",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 130,
+    "width": 3,
+    "weight": 0.056,
+    "top_ngrams": [
+     [
+      "that can be",
+      4
+     ],
+     [
+      "` python \\n",
+      4
+     ],
+     [
+      "that can help",
+      3
+     ],
+     [
+      "you can use",
+      2
+     ]
+    ]
+   },
+   {
+    "filter": 396,
+    "width": 5,
+    "weight": 0.055,
+    "top_ngrams": [
+     [
+      ": < https : /",
+      2
+     ],
+     [
+      "_ Some famous actors known",
+      1
+     ],
+     [
+      "you're stuck on ? _",
+      1
+     ],
+     [
+      "deliberately : It's easy to",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 315,
+    "width": 5,
+    "weight": 0.053,
+    "top_ngrams": [
+     [
+      "` ` ` python \\n",
+      2
+     ],
+     [
+      "actors known for their Broadway",
+      1
+     ],
+     [
+      "Of course ! I'd be",
+      1
+     ],
+     [
+      "takes time and practice ,",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 316,
+    "width": 5,
+    "weight": 0.052,
+    "top_ngrams": [
+     [
+      ", you can _ _",
+      2
+     ],
+     [
+      ", Idina Menzel , Lin",
+      1
+     ],
+     [
+      "help you with your crossword",
+      1
+     ],
+     [
+      "each letter can help you",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 30,
+    "width": 2,
+    "weight": 0.051,
+    "top_ngrams": [
+     [
+      "you can",
+      11
+     ],
+     [
+      "that can",
+      11
+     ],
+     [
+      "You can",
+      6
+     ],
+     [
+      "that it",
+      3
+     ]
+    ]
+   },
+   {
+    "filter": 124,
+    "width": 3,
+    "weight": 0.05,
+    "top_ngrams": [
+     [
+      "answer is :",
+      3
+     ],
+     [
+      "goal is to",
+      2
+     ],
+     [
+      "_ _ Some",
+      1
+     ],
+     [
+      "be happy to",
+      1
+     ]
+    ]
+   },
+   {
+    "filter": 298,
+    "width": 4,
+    "weight": 0.05,
+    "top_ngrams": [
+     [
+      ". Here are a",
+      2
+     ],
+     [
+      "The answer is :",
+      2
+     ],
+     [
+      "do not have a",
+      2
+     ],
+     [
+      ", here is a",
+      2
+     ]
+    ]
+   }
+  ]
+ }
+}

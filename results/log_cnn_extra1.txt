@@ -1,0 +1,10 @@
+=== rq4abl_cnn_content_only_s1
+  [cnn s1] ep 1 loss=2.123 val_acc=0.183 val_f1=0.091 (12s)
+  [cnn s1] ep 2 loss=1.859 val_acc=0.175 val_f1=0.064 (12s)
+  [cnn s1] ep 3 loss=1.751 val_acc=0.210 val_f1=0.130 (13s)
+  [cnn s1] ep 4 loss=1.671 val_acc=0.263 val_f1=0.196 (12s)
+  [cnn s1] ep 5 loss=1.573 val_acc=0.274 val_f1=0.230 (12s)
+  [cnn s1] ep 6 loss=1.468 val_acc=0.261 val_f1=0.186 (12s)
+  [cnn s1] ep 7 loss=1.408 val_acc=0.239 val_f1=0.162 (12s)
+  [cnn s1] ep 8 loss=1.345 val_acc=0.267 val_f1=0.218 (12s)
+=== rq4abl_cnn_content_only_s1: test acc=0.223 macroF1=0.189 (99s, 8 ep)

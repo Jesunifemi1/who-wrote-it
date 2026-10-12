@@ -1,0 +1,10 @@
+=== rq4abl_cnn_first64_s1
+  [cnn s1] ep 1 loss=1.794 val_acc=0.443 val_f1=0.426 (5s)
+  [cnn s1] ep 2 loss=1.462 val_acc=0.447 val_f1=0.418 (5s)
+  [cnn s1] ep 3 loss=1.298 val_acc=0.490 val_f1=0.492 (5s)
+  [cnn s1] ep 4 loss=1.168 val_acc=0.531 val_f1=0.527 (5s)
+  [cnn s1] ep 5 loss=1.087 val_acc=0.551 val_f1=0.554 (5s)
+  [cnn s1] ep 6 loss=0.982 val_acc=0.528 val_f1=0.519 (5s)
+  [cnn s1] ep 7 loss=0.899 val_acc=0.514 val_f1=0.497 (5s)
+  [cnn s1] ep 8 loss=0.803 val_acc=0.531 val_f1=0.531 (5s)
+=== rq4abl_cnn_first64_s1: test acc=0.549 macroF1=0.552 (41s, 8 ep)
